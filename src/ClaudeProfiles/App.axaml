@@ -1,0 +1,74 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="ClaudeProfiles.App"
+             RequestedThemeVariant="Default">
+
+  <Application.Resources>
+    <ResourceDictionary>
+      <FontFamily x:Key="SerifFont">Georgia, Cambria, Times New Roman</FontFamily>
+
+      <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+          <SolidColorBrush x:Key="PageBackgroundBrush" Color="#FAF9F5" />
+          <SolidColorBrush x:Key="CardBrush" Color="#FFFFFF" />
+          <SolidColorBrush x:Key="CardBorderBrush" Color="#E8E6DC" />
+          <SolidColorBrush x:Key="CardBorderHoverBrush" Color="#D3D0C4" />
+          <SolidColorBrush x:Key="TextPrimaryBrush" Color="#141413" />
+          <SolidColorBrush x:Key="TextSecondaryBrush" Color="#6F6E69" />
+          <SolidColorBrush x:Key="AccentBrush" Color="#C96442" />
+          <SolidColorBrush x:Key="AccentHoverBrush" Color="#B4553A" />
+          <SolidColorBrush x:Key="AccentPressedBrush" Color="#9F4A32" />
+          <SolidColorBrush x:Key="AccentForegroundBrush" Color="#FFFFFF" />
+          <SolidColorBrush x:Key="OutlineBrush" Color="#DAD8CE" />
+          <SolidColorBrush x:Key="OutlineHoverBrush" Color="#C6C3B6" />
+          <SolidColorBrush x:Key="HoverFillBrush" Color="#F0EEE6" />
+          <SolidColorBrush x:Key="ChipBrush" Color="#F0EEE6" />
+          <SolidColorBrush x:Key="StatusRunningBrush" Color="#4E9A5B" />
+          <SolidColorBrush x:Key="StatusIdleBrush" Color="#BDBAAE" />
+          <SolidColorBrush x:Key="ErrorBackgroundBrush" Color="#FBEDEA" />
+          <SolidColorBrush x:Key="ErrorBorderBrush" Color="#F0C9BF" />
+          <SolidColorBrush x:Key="DangerBrush" Color="#B83A2E" />
+          <SolidColorBrush x:Key="DangerHoverBrush" Color="#A13227" />
+          <SolidColorBrush x:Key="ScrimBrush" Color="#59141413" />
+          <SolidColorBrush x:Key="DialogBrush" Color="#FFFFFF" />
+        </ResourceDictionary>
+
+        <ResourceDictionary x:Key="Dark">
+          <SolidColorBrush x:Key="PageBackgroundBrush" Color="#262624" />
+          <SolidColorBrush x:Key="CardBrush" Color="#30302E" />
+          <SolidColorBrush x:Key="CardBorderBrush" Color="#3D3D3A" />
+          <SolidColorBrush x:Key="CardBorderHoverBrush" Color="#4F4E4A" />
+          <SolidColorBrush x:Key="TextPrimaryBrush" Color="#FAF9F5" />
+          <SolidColorBrush x:Key="TextSecondaryBrush" Color="#B7B5A9" />
+          <SolidColorBrush x:Key="AccentBrush" Color="#D97757" />
+          <SolidColorBrush x:Key="AccentHoverBrush" Color="#E08566" />
+          <SolidColorBrush x:Key="AccentPressedBrush" Color="#C6683F" />
+          <SolidColorBrush x:Key="AccentForegroundBrush" Color="#FFFFFF" />
+          <SolidColorBrush x:Key="OutlineBrush" Color="#4A4944" />
+          <SolidColorBrush x:Key="OutlineHoverBrush" Color="#5E5D57" />
+          <SolidColorBrush x:Key="HoverFillBrush" Color="#3A3A37" />
+          <SolidColorBrush x:Key="ChipBrush" Color="#3A3A37" />
+          <SolidColorBrush x:Key="StatusRunningBrush" Color="#6FBF7C" />
+          <SolidColorBrush x:Key="StatusIdleBrush" Color="#6F6D66" />
+          <SolidColorBrush x:Key="ErrorBackgroundBrush" Color="#3A2724" />
+          <SolidColorBrush x:Key="ErrorBorderBrush" Color="#5E3A33" />
+          <SolidColorBrush x:Key="DangerBrush" Color="#D9574A" />
+          <SolidColorBrush x:Key="DangerHoverBrush" Color="#E26A5E" />
+          <SolidColorBrush x:Key="ScrimBrush" Color="#99000000" />
+          <SolidColorBrush x:Key="DialogBrush" Color="#30302E" />
+        </ResourceDictionary>
+      </ResourceDictionary.ThemeDictionaries>
+    </ResourceDictionary>
+  </Application.Resources>
+
+  <Application.Styles>
+    <FluentTheme>
+      <FluentTheme.Palettes>
+        <ColorPaletteResources x:Key="Light" Accent="#C96442" RegionColor="#FAF9F5" />
+        <ColorPaletteResources x:Key="Dark" Accent="#D97757" RegionColor="#262624" />
+      </FluentTheme.Palettes>
+    </FluentTheme>
+    <StyleInclude Source="avares://ClaudeProfiles/Styles/ClaudeStyles.axaml" />
+  </Application.Styles>
+
+</Application>
